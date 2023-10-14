@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India</title>
+    <script src="https://kit.fontawesome.com/92057a6aa4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+        .parent{
+            display: grid;
+            grid-template-areas: 'heading heading heading'
+            'img1 img2 img3'
+            'img4 img5 img6'
+            'img7 img8 img9' 
+            'footer footer footer';
+            gap: 30px;
+            align-content: center;
+            justify-content: center;
+            
+        }
+        .nav{
+            display: flex;
+            flex-direction: row;
+            margin-right: 0px;
+            margin-left: 600px;
+            margin-top: 200px;
+            text-decoration: none;
+            
+        }
+        .nav1{
+            margin: 20px;
+            padding: 12px 15px;
+            border: 1px solid black;
+            text-decoration: none;
+            background-color: blue;
+            border-radius: 6px;
+        }
+        .nav2{
+            margin: 20px;
+            padding: 12px 15px;
+            border: 1px solid black;
+            background-color: blue;
+            border-radius: 6px;
+        }
+        .nav3{
+            margin: 20px;
+            padding: 12px 15px;
+            border: 1px solid black;
+            background-color: blue;
+            border-radius: 6px;
+        }
+        .nav1:hover{
+            background-color: red;
+            border-radius: 6px;
+            color: brown;
+        }
+        .nav2:hover{
+            background-color: red;
+            color: brown;
+        }
+        .nav3:hover{
+            background-color: red;
+            color: brown;
+        }
+        .z{
+            text-decoration: none;
+            color: white;
+        }
+        #a1{
+            grid-area: heading;
+            border: 1px solid black;
+            width: auto;
+            height: 400px;
+            background-image: url(https://tinyurl.com/2axdtt5p);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        /* #child2{
+            grid-area: aside;
+            border: 1px solid black;
+            width: auto;
+            height: auto;
+
+        } */
+        #b{
+            grid-area: img1;
+            border: 1px solid black;
+            width: 300px;
+            height: 400px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: auto;
+            text-decoration: none;
+            overflow-x: hidden;            
+        }
+        #c{
+            grid-area: img2;
+            border: 1px solid black;
+            width: 300px;
+            height: 400px;
+            overflow: auto;
+            text-decoration: none;
+            overflow-x: hidden;
+            
+        }
+        #d{
+            grid-area: img3;
+            border: 1px solid black;
+            width: 300px;
+            height: 400px;
+            overflow: auto;
+            text-decoration: none;
+            overflow-x: hidden;
+        }
+        #e{
+            grid-area: img4;
+            border: 1px solid black;
+            width: 300px;
+            height: 400px;
+            overflow: auto;
+            text-decoration: none;
+            overflow-x: hidden;
+        }
+        #f{
+            grid-area: img5;
+            border: 1px solid black;
+            width: 300px;
+            height: 400px;
+            overflow: auto;
+            text-decoration: none;
+            overflow-x: hidden;
+        }
+        #g{
+            grid-area: img6;
+            border: 1px solid black;
+            width: 300px;
+            height: 400px;
+            overflow: auto;
+            text-decoration: none;
+            overflow-x: hidden;
+        }
+        #h{
+            grid-area: img7;
+            border: 1px solid black;
+            width: 300px;
+            height: 400px;
+            overflow: auto;
+            text-decoration: none;
+            overflow-x: hidden;
+        }
+        #i{
+            grid-area: img8;
+            border: 1px solid black;
+            width: 300px;
+            height: 400px;
+            overflow: auto;
+            text-decoration: none;
+            overflow-x: hidden;
+        }
+        #j{
+            grid-area: img9;
+            border: 1px solid black;
+            width: 300px;
+            height: 400px;
+            overflow: auto;
+            text-decoration: none;
+            overflow-x: hidden;
+        }
+        .a{
+            text-align: center;
+            margin: 30px;
+        }
+        .title{
+            text-align: center;
+            align-content: center;
+        }
+        .x{
+            margin: 10px;
+            color: black ;
+        }
+        @media all and (max-width:800px){
+            .cld{
+                width: 500px;
+
+            }
+            
+        }
+        @media all and (max-width: 800px) {
+        .nav {
+            flex-direction: column;
+            margin: 0;
+            text-align: center;
+        }
+        .nav1, .nav2, .nav3 {
+            margin: 10px;
+        }
+        }
+        @media all and (max-width: 800px) {
+        .parent {
+            grid-template-areas: 
+            'heading' 
+            'img1' 
+            'img2' 
+            'img3' 
+            'img4' 
+            'img5' 
+            'img6' 
+            'img7' 
+            'img8' 
+            'img9' 
+            'footer';
+        }
+    }
+    @media all and (max-width: 800px) {
+    .nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav1, .nav2, .nav3 {
+        margin: 10px;
+    }
+}
+        .ch img {
+            max-width: 100%;
+            height: auto;
+        }
+        body {
+            font-size: 16px;
+            background-color: cyan;
+        }   
+        .title {
+            font-size: 1.5em;
+        }
+        .ch:hover{
+                cursor: pointer;
+                box-shadow: 0 0 2px 2px;
+                box-sizing: border-box;
+                opacity: 0.8;
+            }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div id="a1"><h1 class="a">HISTORIC PLACES IN INDIA</h1>
+            <div class="nav">
+            <div class="nav1"><a href="#" class="z">Home</a></div>
+            <div class="nav2"><a href="#" class="z">About us</a></div>
+            <div class="nav3"><a href="#" class="z">Contact us</a></div>
+            </div>
+            <!-- https://tse4.mm.bing.net/th?id=OIP.SgaVj7x4xXBzbKUaPno85wHaE9&pid=Api&P=0&h=180 -->
+            <!-- https://tse3.mm.bing.net/th?id=OIP.9Il524rDCFKq2cu3Xn-aTAHaED&pid=Api&P=0&h=180 -->
+            <!-- https://tse2.mm.bing.net/th?id=OIP.LFujMKsMOnZCh8GpA4SNmAHaFj&pid=Api&P=0&h=180 -->
+        </div>
+        <!-- <div id="child2">aside</div> -->
+        <div id="b" class="cld"><h1 class="title">Jantar Mantar</h1>
+            <a href="https://en.wikipedia.org/wiki/Jantar_Mantar">
+                <img src="https://tinyurl.com/2sprcbym" style="width: 297px; height: 250px;" alt="Jantar Mantar" class="ch">
+            </a>
+            <p>
+                The Jantar Mantar is located in the modern 
+                city of New Delhi. It consists of 13 
+                architectural astronomy instruments. 
+                The site is one of five built by Maharaja 
+                Jai Singh II of Jaipur. Built around 1724, 
+                it is a prominent tourist attraction in 
+                Delhi ...<a href="https://en.wikipedia.org/wiki/Jantar_Mantar">read more</a>
+            </p>
+        </div>
+        <div id="c" class="cld">
+            <h1 class="title">Golconda Fort</h1>
+            <a href="https://en.wikipedia.org/wiki/Golconda">
+                <img src="https://tinyurl.com/y2uv9smp" style="width: 297px; height: 250px;" alt="India gate" class="ch">
+            </a>
+            <p>
+                Golconda Fort is located in the western 
+                part of Hyderabad city and is about 9 km 
+                from the Hussain Sagar Lake. The outer fort 
+                occupies an area of three square kilometers, 
+                which is 4.8 kilometers in length....<a href="https://en.wikipedia.org/wiki/Golconda">read more</a>
+            </p>
+        </div>
+        <div id="d" class="cld"><h1 class="title">Tirumala Thirupathi</h1>
+            <a href="https://en.wikipedia.org/wiki/Tirumala">
+                <img src="https://tinyurl.com/4vr47rvu" style="width: 297px; height: 250px;" alt="redfort" class="ch">
+            </a>
+            <p>
+                Tirumala is a spiritual town in Tirupati 
+                district of the Indian state of Andhra Pradesh. 
+                It is one of the suburbs of the Tirupati urban 
+                agglomeration. The town is a part of Tirupati 
+                Urban Development Authority and located in Tirupati
+                 (urban) mandal of Tirupati revenue division.It  is a 
+                 hill town where Tirumala Venkateshvara Temple is 
+                 located, a popular shrine of Vishnu....<a href="https://en.wikipedia.org/wiki/Tirumala">read more</a>
+            </p>
+        </div>
+        <div id="e" class="cld"><h1 class="title">Victoria Memorial</h1>
+            <a href="https://en.wikipedia.org/wiki/Victoria_Memorial,_Kolkata">
+                <img src="https://tinyurl.com/6pzzzrvd" style="width: 297px; height: 250px;" alt="Victoria Memorial" class="ch">
+            </a>
+            <p>
+                The Victoria Memorial is a large marble 
+                building on the Maidan in Central Kolkata, 
+                having its entrance on the Queen's Way. It 
+                was built between 1906 and 1921 by the 
+                Government of India. It is dedicated to 
+                the memory of Victoria, Empress of India 
+                from 1876 to 1901....<a href="https://en.wikipedia.org/wiki/Victoria_Memorial,_Kolkata">read more</a>
+            </p>
+        </div>
+        <div id="f" class="cld">
+            <h1 class="title">Ajanta Caves</h1>
+            <a href="https://en.wikipedia.org/wiki/Ajanta_Caves">
+                <img src="https://tinyurl.com/mvppy67y" style="width: 297px; height: 250px;" alt="Ajanta Caves" class="ch">
+            </a>
+            <p>The first Buddhist cave monuments at 
+                Ajanta date from the 2nd and 1st centuries 
+                B.C. During the Gupta period (5th and 6th 
+                centuries A.D.), many more richly decorated 
+                caves were added to the original group....<a href="https://en.wikipedia.org/wiki/Ajanta_Caves">read more info</a>
+            </p>
+        </div>
+        <div id="g" class="cld">
+            <h1 class="title">Statue of Unity</h1>
+            <a href="https://en.wikipedia.org/wiki/Statue_of_Unity">
+                <img src="https://tinyurl.com/bdfc8xu3" style="width: 297px; height: 250px;" alt="Statue of Unity" class="ch">
+            </a>
+            <p>
+                The Statue of Unity is the world's tallest 
+                statue, with a height of 182 metres (597 feet)
+                , located near Kevadia in the state of
+                 Gujarat, India. It depicts Indian statesman 
+                 and independence activist Vallabhbhai Patel 
+                 (1875–1950), who was the first deputy prime
+                  minister and home minister of independent 
+                  India and an adherent of Mahatma Gandhi....<a href="https://en.wikipedia.org/wiki/Statue_of_Unity">read more info</a>
+            </p>
+        </div>
+        <div id="h" class="cld">
+            <h1 class="title">Mysore Palace</h1>
+            <a href="https://en.wikipedia.org/wiki/Mysore_Palace">
+                <img src="https://tinyurl.com/y3chvmky" style="width: 297px; height: 250px;" alt="Amritsar" class="ch">
+            </a>
+            <p>
+                Mysore Palace, also known as Amba Vilas 
+                Palace, is a historical palace and a royal 
+                residence (house). It is located in Mysore, 
+                Karnataka, India. It used to be the official 
+                residence of the Wadiyar dynasty and the seat 
+                of the Kingdom of Mysore....<a href="https://en.wikipedia.org/wiki/Mysore_Palace">read more info</a>
+            </p>
+        </div>
+        <div id="i" class="cld">
+            <h1 class="title">Jagannath Temple</h1>
+            <a href="https://en.wikipedia.org/wiki/Jagannath_Temple,_Puri">
+                <img src="https://tinyurl.com/2ypzd8j3" style="width: 297px; height: 250px;" alt="Mecca Masjid" class="ch">
+            </a>
+            <p>
+                The Jagannath Temple is an important Hindu 
+                temple dedicated to Jagannath, a form of 
+                Vishnu – one of the trinity of supreme 
+                divinity in Hinduism. Puri is in the state 
+                of Odisha, on the eastern coast of India. 
+                King Indradyumna of Avanti has built the 
+                main temple of Jagannath at Puri....<a href="https://en.wikipedia.org/wiki/Jagannath_Temple,_Puri">read more info</a>
+            </p>
+        </div>
+        <div id="j" class="cld"><h1 class="title">Dudhsagar Falls</h1>
+            <a href="https://en.wikipedia.org/wiki/Dudhsagar_Falls">
+                <img src="https://tinyurl.com/25xyxdt3" style="width: 297px; height: 250px;" alt="Goa" class="ch">
+                </a>
+            <p>
+                Dudhsagar Falls (lit. 'Sea of Milk') is a 
+                four-tiered waterfall located on the Mandovi 
+                River in the Indian state of Goa. It is 60 
+                km from Panaji by road and is located on the 
+                Belgaum–Vasco Da Gama rail route about 46 km 
+                east of Madgaon and 80 km south of Belgaum. 
+                Dudhsagar Falls is amongst India's tallest 
+                waterfalls with a height of 310 m (1017 feet) 
+                and an average width of 30 metres
+                 (100 feet)....<a href="https://en.wikipedia.org/wiki/Dudhsagar_Falls">read more info</a>
+            </p>
+        </div>
+        <div id="k">
+            <h1>follow us on:</h1>
+            <a href="#"><i class="fa-brands fa-square-instagram fa-beat x" style="font-size: 40px;"></i></a>
+            <a href="#"><i class="fa-brands fa-square-facebook fa-beat x" style="font-size: 40px;"></i></a>
+            <a href="#"><i class="fa-brands fa-square-whatsapp fa-beat x" style="font-size: 40px;"></i></a>
+            <a href="#"><i class="fa-brands fa-square-twitter fa-beat x" style="font-size: 40px;"></i></a>
+            
+            <hr>
+            Copyright &copy;All Right Reserved
+            <b><p style="text-decoration:none;">Designed and Developed By: Abhinash</p></b></div>
+           
+        </div>
+    </div>
+</body>
+</html>
